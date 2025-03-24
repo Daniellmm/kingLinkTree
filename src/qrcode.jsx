@@ -3,7 +3,7 @@ import { QRCodeCanvas } from 'qrcode.react';
 
 
 const Qrcode = () => {
-    const websiteUrl = "https://core-nysc.web.app";
+    const websiteUrl = "https://king-link-tree.vercel.app";
     return (
         <section className='bg-slate-600 min-h-screen w-full flex justify-center items-center'>
             <div className='h-[500px] bg-white w-[700px] flex flex-col justify-center space-y-5 items-center py-9 px-10'>
