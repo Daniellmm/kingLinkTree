@@ -27,7 +27,7 @@ const LandingPage = () => {
             <div className='relative z-10 flex flex-col gap-y-6 justify-center items-center'>
 
                 <div className='flex flex-col items-center pt-10 gap-y-1'>
-                    <h1 className=' text-white text-xl text-center' style={{ fontFamily: 'Minion Pro, serif' }}>
+                    <h1 className=' text-white text-4xl text-center' style={{ fontFamily: 'Minion Pro, serif' }}>
                         <span className='text-[#C1A875]'>Get Up to $4M </span> in Fast, Reliable Funding for you and your customers
                     </h1>
                     <p className='text-white pt-2'>Select the funding you want</p>
@@ -37,12 +37,12 @@ const LandingPage = () => {
                     <div className='h-40 w-40 bg-gray-400 rounded-full'></div>
                 </div>
 
-                <div className='flex flex-col gap-y-2 justify-center items-center pt-5'>
-                    <button className='bg-[#C1A875] text-sm py-4 px-10 md:px-5 rounded-xl'>No Doc Personal Funding Up to $200,000</button>
-                    <button className='bg-[#C1A875] text-sm py-4 px-10 md:px-5 rounded-xl'>Business Cash Loan Funding Up to $3M</button>
-                    <button className='bg-[#C1A875] text-sm py-4 px-10 md:px-5 rounded-xl'>Financing For My Customers up to $4M</button>
-                    <button className='bg-[#C1A875] text-sm py-4 px-10 md:px-5 rounded-xl'>0% Business Credit Card Funding & More</button>
-                    <button className='bg-[#C1A875] text-sm py-4 px-10 md:px-5 rounded-xl'>Home Equity Line of Credit up to $3M</button>
+                <div className='flex flex-col gap-y-2 justify-center items-center pt-5' style={{ fontFamily: 'Montserrat, serif' }}>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[350px]   rounded-xl'><span className='font-bold'>No Doc Personal Funding Up</span> to <span className='font-bold'>$200,000</span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[350px] rounded-xl'><span className='font-bold'>Business Cash Loan Funding Up</span> to <span className='font-bold'> $3M </span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[350px] rounded-xl'><span className='font-bold'>Financing For My Customers</span> up to <span className='font-bold'>$4M</span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[350px] rounded-xl'><span className='font-bold'>0% Business Credit Card Funding</span> & <span className='font-bold'>More</span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[350px] rounded-xl'><span className='font-bold'>Home Equity Line of Credit</span> up to <span className='font-bold'>$3M</span></button>
                 </div>
 
                 <div className='pb-14 pt-2'>
