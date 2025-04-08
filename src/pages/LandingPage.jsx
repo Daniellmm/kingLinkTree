@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import BG from '../assets/images/bg.png'
 import DOLLAR1 from '../assets/images/dollar1.png'
 import DOLLAR2 from '../assets/images/dollar2.png'
 
 const LandingPage = () => {
+    const videoContainerRef = useRef(null);
+
+    useEffect(() => {
+        // Initialize YouTube Player API
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Create YouTube player when API is ready
+        window.onYouTubeIframeAPIReady = () => {
+            new window.YT.Player('youtube-player', {
+                videoId: 'IhGiOPkIoK0',
+                playerVars: {
+                    autoplay: 0,
+                    controls: 1,
+                    rel: 0,
+                    showinfo: 0,
+                    mute: 0,
+                    modestbranding: 1
+                },
+                events: {
+                    'onReady': (event) => {
+                        // Optional: you can autoplay here if needed
+                        // event.target.playVideo();
+                    }
+                }
+            });
+        };
+    }, []);
+
     return (
         <section className='min-h-screen relative overflow-hidden bg-black w-full px-5'>
 
@@ -33,8 +64,31 @@ const LandingPage = () => {
                     <p className='text-white pt-2'>Select the funding you want</p>
                 </div>
 
-                <div className='h-44 w-44 bg-[#C1A875] rounded-full mt-5 flex justify-center items-center'>
-                    <div className='h-40 w-40 bg-gray-400 rounded-full'></div>
+                {/* Video Container */}
+                <div className='h-[300px] w-[300px] bg-[#C1A875] rounded-full mt-5 flex justify-center items-center'>
+                    <div
+                        ref={videoContainerRef}
+                        className='h-[280px] w-[280px] rounded-full overflow-hidden video-rounded-div relative'
+                        style={{
+                            borderRadius: '100%',
+                            overflow: 'hidden'
+                        }}
+                    >
+                        {/* YouTube Player will be inserted here */}
+                        <div
+                            id="youtube-player"
+                            className="absolute inset-0 scale-125"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%) scale(1.5)',
+                                pointerEvents: 'auto'
+                            }}
+                        ></div>
+                    </div>
                 </div>
 
                 <div className='flex flex-col gap-y-2 justify-center items-center pt-5' style={{ fontFamily: 'Montserrat, serif' }}>
@@ -47,10 +101,18 @@ const LandingPage = () => {
 
                 <div className='pb-14 pt-2'>
                     <h1 className='text-white text-center'>
-                       <span className='text-[#C1A875]'> Download FREE </span> “Ultimate Funding Qualifications Guide”
+                        <span className='text-[#C1A875]'> Download FREE </span> "Ultimate Funding Qualifications Guide"
                     </h1>
                 </div>
             </div>
+
+            {/* CSS for circular video */}
+            <style jsx>{`
+                .video-rounded-div iframe {
+                    border-radius: 50%; 
+                    overflow: hidden;
+                }
+            `}</style>
         </section>
     )
 }
