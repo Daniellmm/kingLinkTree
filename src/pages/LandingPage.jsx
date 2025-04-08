@@ -38,8 +38,8 @@ const LandingPage = () => {
                 </div>
 
                 <div className='flex flex-col gap-y-2 justify-center items-center pt-5' style={{ fontFamily: 'Montserrat, serif' }}>
-                    <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px]   rounded-xl'><span className='font-bold'>No Doc Personal Funding Up</span> to <span className='font-bold'>$200,000</span></button>
-                    <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px] rounded-xl'><span className='font-bold'>Business Cash Loan Funding Up</span> to <span className='font-bold'> $3M </span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px]   rounded-xl'><span className='font-bold'>No Doc Personal Funding </span>Up to <span className='font-bold'>$200,000</span></button>
+                    <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px] rounded-xl'><span className='font-bold'>Business Cash Loan Funding </span>Up to <span className='font-bold'> $3M </span></button>
                     <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px] rounded-xl'><span className='font-bold'>Financing For My Customers</span> up to <span className='font-bold'>$4M</span></button>
                     <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px] rounded-xl'><span className='font-bold'>0% Business Credit Card Funding</span> & <span className='font-bold'>More</span></button>
                     <button className='bg-[#C1A875] text-sm h-14 w-[330px] lg:w-[350px] rounded-xl'><span className='font-bold'>Home Equity Line of Credit</span> up to <span className='font-bold'>$3M</span></button>
