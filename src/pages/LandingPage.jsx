@@ -65,10 +65,10 @@ const LandingPage = () => {
                 </div>
 
                 {/* Video Container */}
-                <div className='h-[300px] w-[300px] bg-[#C1A875] rounded-full mt-5 flex justify-center items-center'>
+                <div className='h-[305px] w-[305px] bg-[#C1A875] rounded-full mt-5 flex justify-center items-center'>
                     <div
                         ref={videoContainerRef}
-                        className='h-[280px] w-[280px] rounded-full overflow-hidden video-rounded-div relative'
+                        className='h-[290px] w-[290px] rounded-full overflow-hidden video-rounded-div relative'
                         style={{
                             borderRadius: '100%',
                             overflow: 'hidden'
