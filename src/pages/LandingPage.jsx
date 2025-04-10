@@ -48,11 +48,49 @@ const LandingPage = () => {
             gsap.from(".animated-item", {
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%", // when the top of the element hits 80% from the top of viewport
+                    start: "top 80%", 
                     end: "bottom 20%",
                     toggleActions: "play none none reverse"
                 },
                 y: 100,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 1
+            });
+
+            gsap.from(".animated-item-1", {
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", 
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse"
+                },
+                y: -100,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 1
+            });
+
+            gsap.from(".animated-item-a", {
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", 
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse"
+                },
+                x: 100,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 1
+            });
+            gsap.from(".animated-item-b", {
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", 
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse"
+                },
+                x: -100,
                 opacity: 0,
                 stagger: 0.2,
                 duration: 1
@@ -74,17 +112,17 @@ const LandingPage = () => {
                 />
             </div>
 
-            <div className='absolute top-[200px] right-[0px] animated-item'>
+            <div className='absolute top-[200px] right-[0px] animated-item-a'>
                 <img src={DOLLAR1} alt="" className='' />
             </div>
-            <div className='absolute bottom-[50px] left-[0px] animated-item'>
+            <div className='absolute bottom-[50px] left-[0px] animated-item-b'>
                 <img src={DOLLAR2} alt="" className='' />
             </div>
 
             {/* Foreground Content */}
             <div className='relative z-10 flex flex-col gap-y-6 justify-center items-center'>
 
-                <div className='flex flex-col items-center pt-10 gap-y-1 animated-item'>
+                <div className='flex flex-col items-center pt-10 gap-y-1 animated-item-1'>
                     <h1 className=' text-white text-4xl text-center' style={{ fontFamily: 'Minion Pro, serif' }}>
                         <span className='text-[#C1A875] font-bold text-5xl'>Get Up to $4M </span> in Fast, Reliable Funding for you and your customers
                     </h1>
