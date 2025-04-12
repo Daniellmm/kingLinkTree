@@ -21,7 +21,7 @@ const LandingPage = () => {
         // Create YouTube player when API is ready
         window.onYouTubeIframeAPIReady = () => {
             new window.YT.Player('youtube-player', {
-                videoId: 'IhGiOPkIoK0',
+                videoId: 'JvPEDv5MiFg',
                 playerVars: {
                     autoplay: 0,
                     controls: 1,
