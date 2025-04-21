@@ -126,16 +126,15 @@ const LandingPage = () => {
                     <h1 className=' text-white text-4xl text-center' style={{ fontFamily: 'Minion Pro, serif' }}>
                         <span className='text-[#C1A875] font-bold text-5xl'>Get Up to $4M </span> in Fast, Reliable Funding for you and your customers
                     </h1>
-                    <p className='text-white pt-2'>Select the funding you want</p>
                 </div>
 
                 {/* Video Container */}
-                <div className='h-[305px] w-[305px] bg-[#C1A875] rounded-full mt-5 flex justify-center items-center animated-item'>
+                <div className='h-[405px] w-[340px] bg-[#C1A875] mt-2 flex justify-center items-center animated-item'>
                     <div
                         ref={videoContainerRef}
-                        className='h-[290px] w-[290px] rounded-full overflow-hidden video-rounded-div relative'
+                        className='h-[380px] w-[320px]  overflow-hidden video-rounded-div relative'
                         style={{
-                            borderRadius: '100%',
+                            // borderRadius: '100%',
                             overflow: 'hidden'
                         }}
                     >
@@ -154,6 +153,9 @@ const LandingPage = () => {
                             }}
                         ></div>
                     </div>
+                </div>
+                <div>
+                <p className='text-white text-[22px] pt-2'>Select the funding you want</p>
                 </div>
 
                 <div className='flex flex-col gap-y-2 justify-center items-center pt-5' style={{ fontFamily: 'Montserrat, serif' }}>
