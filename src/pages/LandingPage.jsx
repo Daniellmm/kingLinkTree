@@ -124,7 +124,7 @@ const LandingPage = () => {
 
                 <div className='flex flex-col items-center pt-10 gap-y-1 animated-item-1'>
                     <h1 className=' text-white text-4xl text-center' style={{ fontFamily: 'Minion Pro, serif' }}>
-                        <span className='text-[#C1A875] font-bold text-5xl'>Get Up to $4M </span> in Fast, Reliable Funding for you and your customers
+                        <span className='text-[#C1A875] font-bold text-5xl'>Get Up to $4M </span> <br /> in Fast, Reliable Funding for you and your customers
                     </h1>
                 </div>
 
